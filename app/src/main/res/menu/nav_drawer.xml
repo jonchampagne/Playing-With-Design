@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_floating_action_button"
+        android:icon="@drawable/ic_android_black_24dp"
+        android:title="FloatingActionButton" />
+    <item
+        android:id="@+id/action_snackbar"
+        android:icon="@drawable/ic_android_black_24dp"
+        android:title="Snackbar" />
+    <item
+        android:icon="@drawable/ic_android_black_24dp"
+        android:title="TabLayout" />
+    <item
+        android:icon="@drawable/ic_android_black_24dp"
+        android:title="AppBarLayout" />
+    <item
+        android:icon="@drawable/ic_android_black_24dp"
+        android:title="CollapsingToolbarLayout" />
+</menu>
