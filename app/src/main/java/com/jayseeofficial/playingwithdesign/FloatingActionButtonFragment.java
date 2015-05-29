@@ -1,9 +1,12 @@
 package com.jayseeofficial.playingwithdesign;
 
+import android.app.Activity;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.Fragment;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -19,6 +22,18 @@ public class FloatingActionButtonFragment extends Fragment {
 
     @InjectView(R.id.floating_action_button)
     FloatingActionButton fab;
+
+    @InjectView(R.id.tb_main)
+    Toolbar tbMain;
+
+    @Override
+    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
+        Activity activity = getActivity();
+        if (activity instanceof AppCompatActivity) {
+            ((AppCompatActivity) activity).setSupportActionBar(tbMain);
+        }
+    }
 
     public static FloatingActionButtonFragment getInstance() {
         FloatingActionButtonFragment fragment = new FloatingActionButtonFragment();

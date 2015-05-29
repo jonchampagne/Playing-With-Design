@@ -22,15 +22,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     @InjectView(R.id.nav_view)
     NavigationView navigationView;
 
-    @InjectView(R.id.tb_main)
-    Toolbar tbMain;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         ButterKnife.inject(this);
-        setSupportActionBar(tbMain);
         navigationDrawer.openDrawer(GravityCompat.START);
         navigationView.setNavigationItemSelectedListener(this);
     }
