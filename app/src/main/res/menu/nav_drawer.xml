@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
+        android:id="@+id/action_text_input_layout"
+        android:icon="@drawable/ic_android_black_24dp"
+        android:title="TextInputLayout" />
+    <item
         android:id="@+id/action_floating_action_button"
         android:icon="@drawable/ic_android_black_24dp"
         android:title="FloatingActionButton" />

@@ -72,6 +72,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                     .replace(R.id.content_frame, SnackbarFragment.getInstance())
                     .commit();
             actionDone = true;
+        } else if (id == R.id.action_text_input_layout) {
+            getSupportFragmentManager().beginTransaction()
+                    .replace(R.id.content_frame, TextInputLayoutFragment.getInstance())
+                    .commit();
+            actionDone = true;
         } else {
             Toast.makeText(this, "Unimplemented:\n" + menuItem.getTitle(), Toast.LENGTH_SHORT).show();
         }
